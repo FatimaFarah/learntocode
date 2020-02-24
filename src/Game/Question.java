@@ -1,27 +1,27 @@
 package src.Game;
 
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Question {
-
-    Scanner userInput = new Scanner(System.in);
-
-
-    public String welcomeMessage = "HELLO, WELCOME TO FATIMA'S TEXT BASED GAME";
-
-    String scenarioOne = "You're in bed and hear a noise, what do you do?" + userInput;
-    String nextQuestion = "What is your next move?";
-
-    ArrayList<String> answers;
+    public static void main(String[] args) {
 
 
+        Scanner userInput = new Scanner(System.in);
+
+
+        String scenarioOne = "You're in bed and hear a noise, what do you do?" + userInput;
+
+        String nextQuestion = "You're now outside of your room but you can see a shadow at the end of the hallway, " +
+            "what do you do?" + userInput;
 
 
 
+        //array list of all of the current answers available
 
 
+
+    }
 }
 
 
