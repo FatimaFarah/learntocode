@@ -23,7 +23,6 @@ public class Answers {
 
   }
 
-  public static class Question  extends Answers{
 
 
     Scanner userInput = new Scanner(System.in);
