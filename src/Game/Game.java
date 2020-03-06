@@ -16,41 +16,27 @@ public class Game extends Answers {
     Question question1 = new Question();
 
 
+
     System.out.println("WELCOME TO FATIMA'S TEXT BASED GAME");
     System.out.println(question1.getScenarioOne);
 
-    if (userInput = answer1.answers(0)) {
-      System.out.println("You rush out of bed in order to identify the noise and leave your room!");
-    }
-    else if (userInput = answer1.answers(1)) {
-      System.out.println("You have died");
-    }
+      if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerOne)) {
+        System.out.println("You rush out of bed in order to identify the noise and leave your room!");
+      }
+      else if (question1.getScenarioOne= Boolean.parseBoolean(answer1.answerTwo)) {
+        System.out.println("You have died");
+      }
 
-    System.out.println("You're now outside your room and you see the looming shadow"  + getUserInput);
+      System.out.println("You're now outside your room and you see the looming shadow" + question1.getUserInput);
 
-    if (userInput = answer1.answers(2)) {
-      System.out.println("The shadow grabbed you and killed you");
-    }
-
-    else if (userInput = answer1.answers(3)){
-      System.out.println("You run the other way and come across a knife on a table");
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
+      if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerThree)) {
+        System.out.println("The shadow grabbed you and killed you");
+      }
+      else if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerFour)) {
+        System.out.println("You run the other way and come across a knife on a table");
+      }
 
     }
-
 
   }
 

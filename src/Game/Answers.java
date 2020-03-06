@@ -1,43 +1,37 @@
 package src.Game;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Answers {
 
-    public static void main(String[] args){
 
 
-      String answerOne = "You stay in bed and ignore the loud noise";
-      String answerTwo = "You leap out of bed and head towards your door!";
-      String answerThree = "You follow the shadow";
-      String answerFour = "You hide around the nearest corner";
+      public String answerOne = "You stay in bed and ignore the loud noise";
+      public String answerTwo = "You leap out of bed and head towards your door!";
+      public String answerThree = "You follow the shadow";
+      public String answerFour = "You hide around the nearest corner";
 
-      ArrayList<String> answers = new ArrayList<>();
+
+
+      /*ArrayList<String> answers = new ArrayList<>();
 
       answers.add(answerOne);
       answers.add(answerTwo);
       answers.add(answerThree);
-      answers.add(answerFour);
+      answers.add(answerFour); */
 
 
   }
 
+  class Question extends Answers {
 
 
-    Scanner userInput = new Scanner(System.in);
+  public boolean getScenarioOne;
+  public boolean getUserInput;
 
-    public Scanner getUserInput() {
-      return userInput;
-    }
 
-    public String getScenarioOne() {
-      return scenarioOne;
-    }
+  Scanner userInput = new Scanner(System.in);
 
-    public String getNextQuestion() {
-      return nextQuestion;
-    }
 
     protected String scenarioOne = "You're in bed and hear a noise, what do you do?" + userInput;
 
@@ -48,4 +42,3 @@ public class Answers {
 
   }
 
-}
