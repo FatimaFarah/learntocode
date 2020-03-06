@@ -11,34 +11,22 @@ public class Answers {
       public String answerThree = "You follow the shadow";
       public String answerFour = "You hide around the nearest corner";
 
-
-
-      /*ArrayList<String> answers = new ArrayList<>();
-
-      answers.add(answerOne);
-      answers.add(answerTwo);
-      answers.add(answerThree);
-      answers.add(answerFour); */
-
-
   }
 
   class Question extends Answers {
 
-
   public boolean getScenarioOne;
   public boolean getUserInput;
+  //should these be booleans
+    //get clarification on how to actually add input into a method
 
 
   Scanner userInput = new Scanner(System.in);
-
 
     protected String scenarioOne = "You're in bed and hear a noise, what do you do?" + userInput;
 
     protected String nextQuestion = "You're now outside of your room but you can see a shadow at the end of the hallway, " +
         "what do you do?" + userInput;
-
-
 
   }
 

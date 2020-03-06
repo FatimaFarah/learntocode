@@ -1,13 +1,11 @@
 package src.Game;
 
-import java.util.Scanner;
-import java.util.ArrayList;
-
-public class Game extends Answers {
-
-  //to use variables from another class you have to create that class
-  //Answers answer1 = new Answers();
+//to use variables from another class you have to create that class
+//Answers answer1 = new Answers();
 //System.out.println(answer1.answerOne);
+
+
+public class Game {
 
 
   public static void main(String[] args) {
@@ -27,7 +25,7 @@ public class Game extends Answers {
         System.out.println("You have died");
       }
 
-      System.out.println("You're now outside your room and you see the looming shadow" + question1.getUserInput);
+      System.out.println("You're now outside your room and you see the looming shadow  " +  question1.getUserInput);
 
       if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerThree)) {
         System.out.println("The shadow grabbed you and killed you");
