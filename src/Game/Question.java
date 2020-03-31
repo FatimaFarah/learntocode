@@ -1,5 +1,6 @@
 package src.Game;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Question {
@@ -8,7 +9,7 @@ public class Question {
 
   String question;
   List<Answer> answers;
-
+  
     answers.add("Stay in bed");
     answers.add("Investigate the noise");
 
@@ -17,6 +18,8 @@ public class Question {
     this.id = id;
     this.question = questionText;
     this.answers = answers;
+
+
   }
 
   void printQuestion(){

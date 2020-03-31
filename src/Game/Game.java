@@ -10,14 +10,20 @@ public class Game {
 
   private List<Question> questions;
 
+
   public Game() {
     questions = new ArrayList<>();
+
+    questions.add("You hear a noise what do you do?");
+    questions.add("You leave your room and see something");
+
     scanner = new Scanner(System.in);
   }
 
   void addQuestion(Question question){
     questions.add(question);
   }
+
 
 
   private void run(){
