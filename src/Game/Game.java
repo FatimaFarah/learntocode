@@ -1,41 +1,39 @@
 package src.Game;
 
-//to use variables from another class you have to create that class
-//Answers answer1 = new Answers();
-//System.out.println(answer1.answerOne);
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Game {
 
+  private Scanner scanner;
 
-  public static void main(String[] args) {
+  private List<Question> questions;
 
-    Answers answer1 = new Answers();
-    Question question1 = new Question();
+  public Game() {
+    questions = new ArrayList<>();
+    scanner = new Scanner(System.in);
+  }
+
+  void addQuestion(Question question){
+    questions.add(question);
+  }
 
 
+  private void run(){
+    int currentQuestion =0;
+    while (currentQuestion != 1000) {
 
-    System.out.println("WELCOME TO FATIMA'S TEXT BASED GAME");
-    System.out.println(question1.getScenarioOne);
-
-      if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerOne)) {
-        System.out.println("You rush out of bed in order to identify the noise and leave your room!");
-      }
-      else if (question1.getScenarioOne= Boolean.parseBoolean(answer1.answerTwo)) {
-        System.out.println("You have died");
-      }
-
-      System.out.println("You're now outside your room and you see the looming shadow  " +  question1.getUserInput);
-
-      if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerThree)) {
-        System.out.println("The shadow grabbed you and killed you");
-      }
-      else if (question1.getScenarioOne = Boolean.parseBoolean(answer1.answerFour)) {
-        System.out.println("You run the other way and come across a knife on a table");
-      }
-
+      System.out.println(questions.get(currentQuestion).question);
+      String userInput = scanner.nextLine();
+      currentQuestion = questions.get(currentQuestion).checkAnswer(userInput);
     }
 
   }
 
+
+  public List<Question> getQuestions() {
+    return questions;
+  }
+}
 
