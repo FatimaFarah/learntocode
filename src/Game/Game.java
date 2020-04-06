@@ -1,43 +1,44 @@
 package src.Game;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Game {
 
   private Scanner scanner;
 
-  private List<Question> questions = new ArrayList<>();
-
+  private List<Question> questions;
 
   public Game() {
-
-
-    questions.add(new Question(0,"You hear a noise, what do you do", "";
-    questions.add(new Question(1,"You leave your room and see something","";
-
-
     scanner = new Scanner(System.in);
+    questions = new ArrayList<>();
   }
 
   void addQuestion(Question question){
     questions.add(question);
   }
 
-
-
-  private void run(){
-    int currentQuestion =0;
+  public void run(){
+    int currentQuestion = 0;
     while (currentQuestion != 1000) {
+      Question current = getQuestion(currentQuestion);
 
-      System.out.println(questions.get(currentQuestion).question);
+      current.printQuestion();
       String userInput = scanner.nextLine();
-      currentQuestion = questions.get(currentQuestion).checkAnswer(userInput);
+      int nextQuestion = current.checkAnswer(userInput);
+      if (nextQuestion == -1) {
+        System.out.println("you dummy");
+      } else {
+        currentQuestion = nextQuestion;
+      }
     }
 
   }
 
+  //find the question with the right id, not the question in that position in the list
+  private Question getQuestion(int id) {
+    Question result = questions.get(id);
+    return result;
+  }
 
   public List<Question> getQuestions() {
     return questions;
