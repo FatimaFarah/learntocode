@@ -5,11 +5,13 @@ import java.util.List;
 
 public class Question {
 
+  // two answer options
+  //"You have died"
+  //"You can now proceed to the next question"
+
   int id;
-
   String question;
-  List<Answer> answers;
-
+  List<Answer> answers = new ArrayList<>();
 
 
   public Question(int id, String questionText, List<Answer> answers) {
@@ -17,11 +19,19 @@ public class Question {
     this.question = questionText;
     this.answers = answers;
 
+    answers.add();
+    answers.add();
+
+
   }
 
   void printQuestion(){
     System.out.println(question);
   }
+
+
+
+
 
   int checkAnswer(String input){
     for (Answer answer : answers) {

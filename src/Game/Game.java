@@ -14,8 +14,8 @@ public class Game {
   public Game() {
 
 
-    questions.add(new Question(0,"You hear a noise, what do you do", "" ));
-    questions.add(new Question(1,"You leave your room and see something", ""));
+    questions.add(new Question(0,"You hear a noise, what do you do", "";
+    questions.add(new Question(1,"You leave your room and see something","";
 
 
     scanner = new Scanner(System.in);
