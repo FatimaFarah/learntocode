@@ -8,14 +8,15 @@ public class Game {
 
   private Scanner scanner;
 
-  private List<Question> questions;
+  private List<Question> questions = new ArrayList<>();
 
 
   public Game() {
-    questions = new ArrayList<>();
 
-    questions.add("You hear a noise what do you do?");
-    questions.add("You leave your room and see something");
+
+    questions.add(new Question(0,"You hear a noise, what do you do", "" ));
+    questions.add(new Question(1,"You leave your room and see something", ""));
+
 
     scanner = new Scanner(System.in);
   }

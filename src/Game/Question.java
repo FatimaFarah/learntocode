@@ -9,16 +9,13 @@ public class Question {
 
   String question;
   List<Answer> answers;
-  
-    answers.add("Stay in bed");
-    answers.add("Investigate the noise");
+
 
 
   public Question(int id, String questionText, List<Answer> answers) {
     this.id = id;
     this.question = questionText;
     this.answers = answers;
-
 
   }
 
