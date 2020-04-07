@@ -35,6 +35,7 @@ public class Game {
   }
 
   //find the question with the right id, not the question in that position in the list
+
   private Question getQuestion(int id) {
     Question result = questions.get(id);
     return result;
