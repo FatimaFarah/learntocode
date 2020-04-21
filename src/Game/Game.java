@@ -13,11 +13,11 @@ public class Game {
     questions = new ArrayList<>();
   }
 
-  void addQuestion(Question question){
+  void addQuestion(Question question) {
     questions.add(question);
   }
 
-  public void run(){
+  public void run() {
     int currentQuestion = 0;
     while (currentQuestion != 1000) {
       Question current = getQuestion(currentQuestion);
@@ -36,13 +36,19 @@ public class Game {
 
   //find the question with the right id, not the question in that position in the list
 
-  private Question getQuestion(int id) {
+  private Question getQuestion(int id, List<Question> questions) {
     Question result = questions.get(id);
-    return result;
-  }
 
-  public List<Question> getQuestions() {
-    return questions;
+    for ( id: questions) {
+
+    }
+    return result;
+
   }
+    public List<Question> getQuestions () {
+      return questions;
+    }
+
+
 }
 
