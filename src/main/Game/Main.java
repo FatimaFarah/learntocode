@@ -1,4 +1,4 @@
-package src.Game;
+package src.main.Game;
 
 import javax.management.AttributeList;
 import java.util.ArrayList;

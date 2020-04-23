@@ -1,4 +1,4 @@
-package src.Game;
+package src.main.Game;
 
 import java.util.List;
 
