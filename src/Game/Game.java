@@ -37,13 +37,31 @@ public class Game {
   //find the question with the right id, not the question in that position in the list
 
   private Question getQuestion(int id) {
-    Question result = questions.get(id);
-
     for ( Question question : questions) {
+
+      if (question.getId() == id){
+        return question;
+
+      }
 
     }
 
-      return result;
+    for (int i = 0; i < questions.size(); i++) {
+
+      if (questions.get(i).id == id){
+        return questions.get(i);
+
+      }
+
+    }
+
+    //stream
+
+    return questions.stream()
+        .filter(question -> question.getId() == id)
+        .findFirst().orElse(null);
+
+      return null;
 
   }
 
