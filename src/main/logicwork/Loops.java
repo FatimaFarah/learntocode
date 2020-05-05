@@ -8,12 +8,34 @@ public class Loops {
   //return fizz if multiple of 3,
   // buzz if multiple of 5,
   // fizzbuzz if multiple of both
+
+
+
   public String fizzBuzz(int x) {
+
+    if (x % 3 ==0) {
+      System.out.println("fizz");
+    }
+    if (x % 5 ==0){
+      System.out.println("buzz");
+    }
+
+    if (x % 3 ==0 && x % 5 == 0){
+      System.out.println("fizzbuzz");
+    }
+
     return "";
   }
 
+
   //converts list into fizzbuzz
+
   public List<String> fizzBuzz(List<Integer> input) {
+
+    
+
+
+
     return Collections.emptyList();
   }
 
