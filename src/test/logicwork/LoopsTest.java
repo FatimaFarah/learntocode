@@ -4,8 +4,10 @@ import java.util.List;
 import org.junit.Test;
 import src.main.logicwork.Loops;
 import java.util.ArrayList;
-
+import static junit.framework.TestCase.assertNotNull;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static junit.framework.TestCase.assertTrue;
+
 
 public class LoopsTest {
 
@@ -13,21 +15,22 @@ public class LoopsTest {
 
   @Test
   public void shouldReturnFizzForMultiplesOf3() {
-    assert(loops.fizzBuzz(3).equals("fizz"));
-    assert(loops.fizzBuzz(9).equals("fizz"));
-    assert(!loops.fizzBuzz(4).equals("fizz"));
+    assert(loops.fizz(3).equals("fizz"));
+    assert(loops.fizz(9).equals("fizz"));
+    assert(!loops.fizz(4).equals("fizz"));
   }
 
   @Test
   public void shouldReturnFizzForMultiplesof5(){
-    assert (loops.fizzBuzz(5).equals("buzz"));
-    assert (loops.fizzBuzz(10).equals("buzz"));
-    assert (!loops.fizzBuzz(8).equals("buzz"));
+    assert (loops.buzz(5).equals("buzz"));
+    assert (loops.buzz(10).equals("buzz"));
+    assert (!loops.buzz(8).equals("buzz"));
   }
 
 
   @Test
   public void shouldReturnFizzBuzzForMultiplesof3And5(){
+
     assert (loops.fizzBuzz(15).equals("fizzbuzz"));
     assert (loops.fizzBuzz(30).equals("fizzbuzz"));
     assert (!loops.fizzBuzz(16).equals("fizzbuzz"));
@@ -38,9 +41,11 @@ public class LoopsTest {
     loops.fizzBuzz(15);
     loops.fizzBuzz(30);
     loops.fizzBuzz(16);
-  }
 
-  
+    loops.fizz(3);
+    loops.buzz(5);
+    
+  }
 
 
 

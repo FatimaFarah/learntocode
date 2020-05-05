@@ -13,12 +13,6 @@ public class Loops {
 
   public String fizzBuzz(int x) {
 
-    if (x % 3 ==0) {
-      System.out.println("fizz");
-    }
-    if (x % 5 ==0){
-      System.out.println("buzz");
-    }
 
     if (x % 3 ==0 && x % 5 == 0){
       System.out.println("fizzbuzz");
@@ -31,19 +25,37 @@ public class Loops {
     return "";
   }
 
+  public String fizz(int x){
+    if (x % 3 ==0) {
+      System.out.println("fizz");
+    }
+    else {
+      System.out.println("boo you whore");
+    }
+
+    return "";
+  }
+
+  public String buzz(int x) {
+    if (x % 5 ==0){
+      System.out.println("buzz");
+    }
+    else {
+      System.out.println("boo you whore");
+    }
+
+    return "";
+
+  }
 
   //converts list into fizzbuzz
 
   public List<String> fizzBuzz(List<Integer> input) {
 
-    input.add(3);
-    input.add(5);
-    input.add(10);
+
 
     return Collections.emptyList();
   }
-
-
 
 
   //reads a csv file calls fizzbuzz
