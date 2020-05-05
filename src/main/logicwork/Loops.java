@@ -32,7 +32,7 @@ public class Loops {
 
   public List<String> fizzBuzz(List<Integer> input) {
 
-    
+
 
 
 
