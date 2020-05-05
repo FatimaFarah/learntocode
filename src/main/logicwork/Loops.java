@@ -32,12 +32,15 @@ public class Loops {
 
   public List<String> fizzBuzz(List<Integer> input) {
 
-
-
-
+    input.add(3);
+    input.add(5);
+    input.add(10);
 
     return Collections.emptyList();
   }
+
+
+
 
   //reads a csv file calls fizzbuzz
   public List<String> fizzBuzz(String path) {
