@@ -24,6 +24,10 @@ public class Loops {
       System.out.println("fizzbuzz");
     }
 
+    else {
+      System.out.println("boo you whore");
+    }
+
     return "";
   }
 

@@ -5,6 +5,8 @@ import org.junit.Test;
 import src.main.logicwork.Loops;
 import java.util.ArrayList;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class LoopsTest {
 
   private Loops loops = new Loops();
@@ -30,5 +32,16 @@ public class LoopsTest {
     assert (loops.fizzBuzz(30).equals("fizzbuzz"));
     assert (!loops.fizzBuzz(16).equals("fizzbuzz"));
   }
+
+  @Test
+  public void assertThat() {
+    loops.fizzBuzz(15);
+    loops.fizzBuzz(30);
+    loops.fizzBuzz(16);
+  }
+
+  
+
+
 
 }
