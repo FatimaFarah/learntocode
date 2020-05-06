@@ -15,9 +15,6 @@ public class LoopsTest {
 
   private Loops loops = new Loops();
 
-  //assertThat(heroCarouselV2ComponentBean.isShowScrollDown(),
-  //    is(true));
-
 
   @Test
   public void shouldReturnFizzForMultiplesOf3() {
