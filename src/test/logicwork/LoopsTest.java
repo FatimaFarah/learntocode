@@ -23,7 +23,7 @@ public class LoopsTest {
   public void shouldReturnFizzForMultiplesOf3() {
     assert(loops.fizz(3).equals("fizz"));
     assert(loops.fizz(9).equals("fizz"));
-    assert(!loops.fizz(4).equals("fizz"));
+    assert(loops.fizz(4).equals("fizz"));
 
   }
 
@@ -44,7 +44,12 @@ public class LoopsTest {
     assert(loops.fizzBuzz(16).equals("fizzbuzz"));
 
   }
-  
+
+  @Test
+  public void testAssertThat(){
+    assertThat(loops.fizzBuzz(15), is("fizzbuzz"));
+  }
+
 
 
 
