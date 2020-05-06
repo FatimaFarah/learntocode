@@ -14,7 +14,7 @@ public class Loops {
   public String fizzBuzz(int x) {
 
 
-    if (x % 3 ==0 && x % 5 == 0){
+    if (x % 3 == 0 && x % 5 == 0){
       System.out.println("fizzbuzz");
     }
 
@@ -26,7 +26,7 @@ public class Loops {
   }
 
   public String fizz(int x){
-    if (x % 3 ==0) {
+    if (x % 3 == 0) {
       System.out.println("fizz");
     }
     else {
