@@ -48,7 +48,23 @@ public class Loops {
 
     public List<String> fizzBuzz (List < Integer > input) {
 
-      Arrays.asList(2,3,5,7,6,5);
+      String fizzBuzz;
+
+      for (int i = 0; i % 3 == 0 ; i++) {
+        System.out.println("fizz");
+
+      }
+
+      for (int i = 0; i % 5 == 0 ; i++) {
+        System.out.println("buzz");
+
+      }
+
+      for (int i = 0; i % 3 == 0 && i % 5 == 0 ; i++) {
+        System.out.println("fizzbuzz");
+
+      }
+
 
 
       return Collections.emptyList();

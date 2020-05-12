@@ -50,7 +50,12 @@ public class LoopsTest {
   @Test
   public void fizzbuzzListTest(){
 
-    assert (loops.fizzBuzz().size());
+    assert (loops.fizzBuzz(3,15,10).equals();
+
+
+
+
+
   }
 
 
