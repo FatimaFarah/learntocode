@@ -1,7 +1,9 @@
 package src.main.logicwork;
 
+import java.lang.reflect.Array;
 import java.util.Collections;
 import java.util.List;
+import java.util.Arrays;
 
 public class Loops {
 
@@ -45,6 +47,8 @@ public class Loops {
     //converts list into fizzbuzz
 
     public List<String> fizzBuzz (List < Integer > input) {
+
+      Arrays.asList(2,3,5,7,6,5);
 
 
       return Collections.emptyList();

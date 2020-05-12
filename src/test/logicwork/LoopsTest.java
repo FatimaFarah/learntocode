@@ -47,6 +47,12 @@ public class LoopsTest {
     assertThat(loops.fizzBuzz(15), is("fizzbuzz"));
   }
 
+  @Test
+  public void fizzbuzzListTest(){
+
+    assert (loops.fizzBuzz().size());
+  }
+
 
 
 
