@@ -21,22 +21,20 @@ public class Loops {
 
 
     if (x % 3 == 0) {
-      System.out.println("fizz");
+      return "fizz";
+
     }
 
     if (x % 5 == 0) {
-      System.out.println("buzz");
+      return "buzz";
     }
 
     if (x % 3 == 0 && x % 5 == 0) {
-      System.out.println("fizzbuzz");
+      return "fizzbuzz";
     }
-
     else {
-      System.out.println("boo you whore");
+      return "";
     }
-
-    return "";
   }
 
     //converts list into fizzbuzz
