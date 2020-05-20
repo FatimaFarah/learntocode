@@ -17,20 +17,20 @@ public class LoopsTest {
   private Loops loops = new Loops();
 
   //fizz should return blank for 4
-  @Test
-  public void shouldReturnFizzForMultiplesOf3() {
-    assert(loops.fizz(3).equals("fizz"));
-    assert(loops.fizz(9).equals("fizz"));
-    assert(loops.fizz(4).equals("fizz"));
 
+  @Test
+  public void shouldReturnFizzBuzzForMultiplesOf3() {
+    assert(loops.fizzBuzz(3).equals("fizz"));
+    assert(loops.fizzBuzz(9).equals("fizz"));
+    assert(loops.fizzBuzz(4).equals("fizz"));
   }
 
   @Test
   public void shouldReturnFizzForMultiplesof5(){
 
-    assert (loops.buzz(5).equals("buzz"));
-    assert (loops.buzz(10).equals("buzz"));
-    assert (loops.buzz(8).equals("buzz"));
+    assert (loops.fizzBuzz(5).equals("buzz"));
+    assert (loops.fizzBuzz(10).equals("buzz"));
+    assert (loops.fizzBuzz(8).equals("buzz"));
   }
 
 

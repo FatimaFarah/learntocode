@@ -1,5 +1,7 @@
 package src.main.logicwork;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -12,53 +14,48 @@ public class Loops {
 
   // NOTE fizzbuzz, fizz and buzz were meant to be all one mthod called fizzBuzz
   // NOTE return the answer instead of printing it out
+
+
+
   public String fizzBuzz(int x) {
 
 
-    if (x % 3 == 0 && x % 5 == 0) {
-      System.out.println("fizzbuzz");
-    } else {
-      System.out.println("boo you whore");
-    }
-
-    return "fizzbuzz";
-  }
-
-  public String fizz(int x) {
     if (x % 3 == 0) {
       System.out.println("fizz");
-    } else {
-      System.out.println("boo you whore");
     }
 
-    return "fizz";
-  }
-
-  public String buzz(int x) {
     if (x % 5 == 0) {
       System.out.println("buzz");
-    } else {
+    }
+
+    if (x % 3 == 0 && x % 5 == 0) {
+      System.out.println("fizzbuzz");
+    }
+
+    else {
       System.out.println("boo you whore");
     }
 
-    return "buzz";
-
+    return "";
   }
+
     //converts list into fizzbuzz
 
-    public List<String> fizzBuzz (List < Integer > input) {
+    public List<String> fizzBuzz (List < Integer> input) {
 
       String fizzBuzz;
+
 
       //These loops aren't quite right
       //This loop will only run once
       // first iteration i = 0, 0%3 = 0 so it will run
       // second iteration i=1, 1%3 = 1 not 0 so terminate loop
-      for (int i = 0; i % 3 == 0 ; i++) {
+
+      for (int i = 100; i % 3 == 0 ; i++) {
         System.out.println("fizz");
       }
 
-      for (int i = 0; i % 5 == 0 ; i++) {
+      for(int i = 100; i % 5 == 0 ; i++) {
         System.out.println("buzz");
 
       }
@@ -102,4 +99,6 @@ public class Loops {
       return Collections.emptyMap();
     }
   }
+
+
 
