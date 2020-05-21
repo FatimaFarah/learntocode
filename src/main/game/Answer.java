@@ -1,4 +1,5 @@
-package src.main.Game;
+package src.main.game;
+
 
 public class Answer {
 
