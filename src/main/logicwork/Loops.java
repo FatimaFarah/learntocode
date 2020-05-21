@@ -49,16 +49,16 @@ public class Loops {
       // first iteration i = 0, 0%3 = 0 so it will run
       // second iteration i=1, 1%3 = 1 not 0 so terminate loop
 
-      for (int i = 100; i % 3 == 0 ; i++) {
+      for (int i = 1000; i % 3 == 0 ; i++) {
         System.out.println("fizz");
       }
 
-      for(int i = 100; i % 5 == 0 ; i++) {
+      for(int i = 1000; i % 5 == 0 ; i++) {
         System.out.println("buzz");
 
       }
 
-      for (int i = 0; i % 3 == 0 && i % 5 == 0 ; i++) {
+      for (int i = 1000; i % 3 == 0 && i % 5 == 0 ; i++) {
         System.out.println("fizzbuzz");
 
       }
