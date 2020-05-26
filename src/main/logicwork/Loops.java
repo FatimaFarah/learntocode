@@ -2,9 +2,7 @@ package src.main.logicwork;
 
 import org.w3c.dom.ls.LSOutput;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Loops {
 
@@ -19,7 +17,9 @@ public class Loops {
 
   public String fizzBuzz(int x) {
 
-
+    if (x % 3 == 0 && x % 5 == 0) {
+      return "fizzbuzz";
+    }
     if (x % 3 == 0) {
       return "fizz";
 
@@ -29,9 +29,7 @@ public class Loops {
       return "buzz";
     }
 
-    if (x % 3 == 0 && x % 5 == 0) {
-      return "fizzbuzz";
-    }
+
     else {
       return "";
     }
@@ -40,8 +38,11 @@ public class Loops {
     //converts list into fizzbuzz
 
     public List<String> fizzBuzz (List < Integer> input) {
+      input = new ArrayList<>();
 
-      String fizzBuzz;
+
+
+
 
 
       //These loops aren't quite right
@@ -49,19 +50,6 @@ public class Loops {
       // first iteration i = 0, 0%3 = 0 so it will run
       // second iteration i=1, 1%3 = 1 not 0 so terminate loop
 
-      for (int i = 1000; i % 3 == 0 ; i++) {
-        System.out.println("fizz");
-      }
-
-      for(int i = 1000; i % 5 == 0 ; i++) {
-        System.out.println("buzz");
-
-      }
-
-      for (int i = 1000; i % 3 == 0 && i % 5 == 0 ; i++) {
-        System.out.println("fizzbuzz");
-
-      }
 
 
       return Collections.emptyList();

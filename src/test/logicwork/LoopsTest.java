@@ -22,26 +22,10 @@ public class LoopsTest {
   public void shouldReturnFizzBuzzForMultiplesOf3() {
     assert(loops.fizzBuzz(3).equals("fizz"));
     assert(loops.fizzBuzz(9).equals("fizz"));
-    assert(loops.fizzBuzz(4).equals("fizz"));
+    assert (loops.fizzBuzz(15)).equals("fizzbuzz");
+    assert(loops.fizzBuzz(4).equals(""));
   }
 
-  @Test
-  public void shouldReturnFizzForMultiplesof5(){
-
-    assert (loops.fizzBuzz(5).equals("buzz"));
-    assert (loops.fizzBuzz(10).equals("buzz"));
-    assert (loops.fizzBuzz(8).equals("buzz"));
-  }
-
-
-  @Test
-  public void shouldReturnFizzBuzzForMultiplesof3And5(){
-
-    assert(loops.fizzBuzz(15).equals("fizzbuzz"));
-    assert(loops.fizzBuzz(30).equals("fizzbuzz"));
-    assert(loops.fizzBuzz(16).equals("fizzbuzz"));
-
-  }
 
   @Test
   public void testAssertThat(){
@@ -50,6 +34,7 @@ public class LoopsTest {
 
   //looks like you were having trouble setting up this test
   //the test is now right
+
   @Test
   public void fizzbuzzListTest(){
     List input = Arrays.asList(3,15,10, 4);
