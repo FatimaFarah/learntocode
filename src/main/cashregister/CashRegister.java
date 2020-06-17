@@ -2,8 +2,9 @@ package src.main.cashregister;
 
 public class CashRegister {
 
-  private double cash = 1000;
-
+  private double cash;
+  private double change;
+  private String item;
 
 
   //take in cost of item and payment
@@ -12,30 +13,29 @@ public class CashRegister {
 
   public double buyItem(double cost, double payment) {
 
-    cost = 60;
-
-    payment = cash / cost;
-
+    if (cost < payment) {
+      return change;
 
 
-    return payment;
+    }
+
+    return change;
+
   }
 
   public double returnItem(double costOfItem) {
 
-    costOfItem = 30;
 
+    return cash;
 
-
-    return cash + costOfItem;
   }
 
   //increase total cash
 
   public void depositCash() {
 
-    cash++;
-
   }
 
 }
+
+

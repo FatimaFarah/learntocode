@@ -32,8 +32,7 @@ public class LoopsTest {
     assertThat(loops.fizzBuzz(15), is("fizzbuzz"));
   }
 
-  //looks like you were having trouble setting up this test
-  //the test is now right
+  ////////
 
   @Test
   public void fizzbuzzListTest(){

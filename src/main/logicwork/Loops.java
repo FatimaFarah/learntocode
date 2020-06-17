@@ -2,6 +2,7 @@ package src.main.logicwork;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Loops {
@@ -38,17 +39,12 @@ public class Loops {
     //converts list into fizzbuzz
 
     public List<String> fizzBuzz (List < Integer> input) {
-      input = new ArrayList<>();
+
+     input = new ArrayList<Integer>();
 
 
 
 
-
-
-      //These loops aren't quite right
-      //This loop will only run once
-      // first iteration i = 0, 0%3 = 0 so it will run
-      // second iteration i=1, 1%3 = 1 not 0 so terminate loop
 
 
 
@@ -60,11 +56,16 @@ public class Loops {
 
     public List<String> fizzBuzz (String path){
 
+
+
+
       return Collections.emptyList();
     }
 
     //join the lists together and sort them in numerical order
     //input will be an array of lists of integer
+
+
     public List<Integer> joinAndSort (List < Integer >...inputs) {
 
       return Collections.emptyList();
