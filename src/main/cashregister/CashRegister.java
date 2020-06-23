@@ -2,37 +2,35 @@ package src.main.cashregister;
 
 public class CashRegister {
 
-  private double cash;
-  private double change;
-  private String item;
+  int cash;
+  int change;
 
 
-  //take in cost of item and payment
-  //return amount of change
-  //update total cash
+  public CashRegister( int initialCash) {
+    cash = initialCash;
+  }
+
 
   public double buyItem(double cost, double payment) {
 
-    if (cost < payment) {
-      return change;
+    cash += cost;
 
 
-    }
-
-    return change;
+    return payment - cash;
 
   }
 
   public double returnItem(double costOfItem) {
 
+   cash -= costOfItem;
 
-    return cash;
+   return costOfItem;
 
   }
 
-  //increase total cash
-
   public void depositCash() {
+
+    cash += cash;
 
   }
 
