@@ -1,8 +1,9 @@
 package src.Practice;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class List {
+public class Arrays {
 
   public static void main(String[] args) {
 
@@ -16,11 +17,14 @@ public class List {
 
     for (int i = 0; i < 4; i++) {
       System.out.println(listOfNumbers[i]);
+
+      //System.out.printf("%s These numbers should return a value less than 4 %n",
+        //  listOfNumbers[i]);
     }
 
     //List
 
-    ArrayList<Integer>listTest= new ArrayList();
+    List<Integer> listTest= new ArrayList();
 
     listTest.add(1);
     listTest.add(2);
