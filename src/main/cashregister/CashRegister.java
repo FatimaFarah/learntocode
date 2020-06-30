@@ -24,15 +24,15 @@ public class CashRegister {
 
     public double returnItem (double costOfItem) {
     cash -= costOfItem;
-      // TODO: 30/06/2020 add code here
 
     return costOfItem;
 
     }
 
     public void depositCash () {
-      // TODO: 30/06/2020 add code here
       cash += cash;
+
+
 
     }
 
