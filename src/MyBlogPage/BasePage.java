@@ -1,10 +1,8 @@
-package src;
+package src.MyBlogPage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
@@ -42,21 +40,6 @@ public class BasePage {
     return wait.withMessage(messageToPrintOnFailure).until(isTrue);
   }
 
-  protected void waitForElementToAppear(By locator) {
-    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-  }
-
-  protected void waitForElementToDisappear(By locator) {
-    wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-  }
-
-  protected void waitForTextToDisappear(By locator, String text) {
-    wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
-  }
-
-  protected void waitForUrlToBe(String url) {
-    wait.until(ExpectedConditions.urlToBe(url));
-  }
 
   protected Actions actions() {
     return new Actions(getDriver());

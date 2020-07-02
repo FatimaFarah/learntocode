@@ -1,4 +1,4 @@
-package src;
+package src.MyBlogTest;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -17,8 +17,6 @@ public class BaseIT {
 
   @BeforeClass
   public static void beforeSuite() {
-    WebDriverManager.chromedriver().setup();
-
     driver = new ChromeDriver();
     driver.manage().window().maximize();
   }
