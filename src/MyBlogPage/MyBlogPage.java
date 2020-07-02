@@ -24,7 +24,7 @@ public class MyBlogPage extends BasePage {
     return getDriver().findElement(By.cssSelector(".site-description"));
   }
 
-  private void checkIfPageSubheadingIsDisplayed() {
+  public void checkIfPageSubheadingIsDisplayed() {
    getSubheading().isDisplayed();
   }
 
@@ -32,7 +32,7 @@ public class MyBlogPage extends BasePage {
     return getDriver().findElement(By.cssSelector("#menu-item-660"));
   }
 
-  private void clickFeminismTab() {
+  public void clickFeminismTab() {
     getFeminismSubheading().click();
   }
 
