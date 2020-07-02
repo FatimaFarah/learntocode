@@ -21,7 +21,7 @@ public class MyBlogPage extends BasePage {
   }
 
   private WebElement getSubheading() {
-    return getDriver().findElement(By.cssSelector(".site-description"))
+    return getDriver().findElement(By.cssSelector(".site-description"));
   }
 
   private void checkIfPageSubheadingIsDisplayed() {

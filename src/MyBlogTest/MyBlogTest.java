@@ -2,23 +2,24 @@ package src.MyBlogTest;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import src.MyBlogPage.MyBlogPage;
 
 
 public class MyBlogTest extends BaseIT {
 
-  MyBlogPage myBlogPage = new MyBlogPage(driver);
+  private MyBlogPage myBlogPage;
+
+  // TODO: 02/07/2020  figure out why tests are being ignored
+  // TODO: 02/07/2020 finish writing tests for finding subheading and clicking menu tab 
 
   @Before
-  public void open() {
+  public void openURL() {
     getDriver().get("https://fatimaspeaks.com/");
   }
 
-
-
-
-
-
+  @Test
+  public void checkIfPageTitleIsDisplayed() {
+    myBlogPage.checkIfPageTitleIsDisplayed();
+  }
 
 }
