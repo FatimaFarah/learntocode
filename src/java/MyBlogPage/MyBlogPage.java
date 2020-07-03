@@ -13,7 +13,7 @@ public class MyBlogPage extends BasePage {
   }
 
  private WebElement getPageTitle(){
-    return getDriver().findElement(By.cssSelector(".home"));
+    return getDriver().findElement(By.cssSelector(".site-title"));
   }
 
   public void checkIfPageTitleIsDisplayed() {
