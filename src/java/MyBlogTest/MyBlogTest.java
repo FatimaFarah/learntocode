@@ -1,7 +1,6 @@
 package MyBlogTest;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import MyBlogPage.MyBlogPage;
 
